@@ -1,0 +1,244 @@
+@font-face {
+  font-family: JustAnotherHand;
+  src: url(../font/JustAnotherHand-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat-SemiBold.ttf);
+}
+body {
+  background-image: url(../home/homepage.jpg);
+  background-color: #000000;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.div-credit{
+color: white;
+font-weight: bold; 
+font-size: 16px; 
+padding-left: 2%;
+font-family: Montserrat;
+}
+
+.subMenu {
+  background-color: #0077ff;
+  padding: 10px;
+  opacity: 85%;
+}
+
+.navbarLogin {
+  background-color: #1A1A1A;
+  padding: 13px;
+  margin: -8px;
+  position: fixed;
+  width: 100%;
+
+}
+.navbar-brand {
+  padding-left: 8px;
+  color: white !important;
+  font-size: 2.8em;
+  font-family: JustAnotherHand;
+  transition: transform 0.3s; /* Aggiunge un'animazione di transizione */
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1); /* Ingrandisce leggermente il tasto quando il mouse ci passa sopra */
+}
+
+.nav-link {
+  transition: transform 0.3s; /* Aggiunge un'animazione di transizione */
+}
+
+.nav-link:hover {
+  background-color: #007bff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+  color: white;
+  margin-left: 60px;
+  font-size: 17px;
+  font-family: montserrat;
+}
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  width: 46%;
+  border-radius: 20px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+  width: 46%;
+  border-radius: 20px;
+
+}
+#title {
+  color: red;
+  /*background-color: yellow;*/
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 100px;
+}
+
+.oscillating-title {
+  animation: oscillate 2s infinite;
+}
+
+@keyframes oscillate {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#navcolor{
+  background: #3D3D3D;
+} 
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+.superheroes-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.superhero-card {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.superhero-card img {
+  width: 100%;
+  height: auto;
+}
+
+.superhero-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.row {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-basis: 20%; 
+  box-sizing: border-box;
+}
+
+.card {
+  border: none;
+  width: 23rem;
+  height: 15rem;
+  padding-bottom: 80%;
+  background: none;
+}
+.card-body {
+  padding: 0rem;
+}
+
+.card-img-top{
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.card-side{
+  width: 20rem;
+  border-radius: 15px;
+  position: absolute;
+  color: #fff;
+}
+
+.card-side.front{
+  background-color: #1A1A1A;
+}
+
+.back{
+  opacity: 90%;
+}
+.main-container{ 
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #DBDBDB;
+}
+
+.card-button {
+  margin-left: 20px;
+}
+
+#info-div {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(255, 255, 255);
+  background-image: linear-gradient(160deg, tomato 0%, darkred, 100%);
+  padding: 2rem;
+  border-radius: 5%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: fit-content;
+  max-width: 70%;
+  height: fit-content;
+  max-height: 70%;
+}
+
+.footer {
+  background-color: #1A1A1A;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+}

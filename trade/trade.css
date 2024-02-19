@@ -1,0 +1,56 @@
+@font-face {
+    font-family: JustAnotherHand;
+    src: url(../font/JustAnotherHand-Regular.ttf);
+  }
+  @font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-SemiBold.ttf);
+  }
+body {
+    background-image: url(homepage.jpg);
+    background-color: #000000;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar-brand {
+    padding-left: 8px;
+    color: white !important;
+    font-size: 2.8em;
+    font-family: JustAnotherHand;
+    transition: transform 0.3s; /* Aggiunge un'animazione di transizione */
+  }
+#trade-div{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 2rem;
+}
+.main-container{
+    padding-left: 2rem;
+}
+
+#dop, #no-dop {
+    display: none;
+}
+
+.row {
+    flex-direction: column;
+}
+
+.span-bold {
+    font-weight: bolder;
+}
+
+.vertical-spacer{
+    padding-top: 1rem;
+    border-bottom: 1px solid black;
+}
+
+.trade-hero-img {
+    height: 8rem;
+    padding-bottom: 1rem;
+}

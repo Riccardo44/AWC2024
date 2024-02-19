@@ -1,0 +1,3 @@
+#modifyContainer,#deleteContainer, #modifyPassword, #modifyUserName{
+    display: none;
+}
